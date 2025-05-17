@@ -1,0 +1,55 @@
+<!DOCTYPE html>
+<html lang="ar" dir="rtl">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>مولد المقالات بالذكاء الاصطناعي</title>
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+    <div class="container">
+        <header>
+            <h1>مولد المقالات الذكي</h1>
+            <p>أدوات كتابة متكاملة بالذكاء الاصطناعي</p>
+        </header>
+
+        <div class="toolbar">
+            <button id="humanize">كتابة مقال بشري 📝</button>
+            <button id="rewrite">إعادة صياغة 🔄</button>
+            <button id="humanText">تحويل لنص بشري 👤</button>
+            <button id="grammar">تدقيق نحوي ✍️</button>
+            <button id="plagiarism">فحص الانتحال 🔍</button>
+            <button id="analyze">تحليل 📊</button>
+        </div>
+
+        <div class="text-area">
+            <textarea id="inputText" placeholder="أدخل النص هنا..."></textarea>
+            <div class="actions">
+                <button id="process">معالجة النص</button>
+                <input type="file" id="imageUpload" accept="image/*">
+                <label for="imageUpload" class="upload-btn">تحميل صورة</label>
+            </div>
+        </div>
+
+        <div class="stats">
+            <span>الكلمات: <span id="wordCount">0</span></span>
+            <span>الأسطر: <span id="lineCount">0</span></span>
+            <span>الأحرف: <span id="charCount">0</span></span>
+        </div>
+
+        <div class="translation">
+            <button id="translateEs">ترجمة إلى الإسبانية</button>
+            <button id="translateFr">ترجمة إلى الفرنسية</button>
+            <button id="translateAr">ترجمة إلى العربية</button>
+            <button id="summarize">تلخيص</button>
+        </div>
+
+        <div class="result-area">
+            <h3>النتيجة:</h3>
+            <div id="outputText" class="output"></div>
+        </div>
+    </div>
+
+    <script src="script.js"></script>
+</body>
+</html>
